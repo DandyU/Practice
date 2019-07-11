@@ -33,7 +33,7 @@ public class SmpteTimecode {
             throw new Error("Unsupported frame rate");
 
         // If we are passed dropFrame, we need to use it
-        if (dropFrame != null)
+        if (dropFrame instanceof Boolean)
             this.dropFrame = dropFrame.booleanValue();
         else
             this.dropFrame = (this.frameRate == 29.97 || this.frameRate == 59.94); // by default, assume DF for 29.97 and 59.94, NDF otherwise
@@ -56,9 +56,9 @@ public class SmpteTimecode {
             this.minutes = Integer.parseInt(parts[1]);
             this.seconds = Integer.parseInt(parts[2]);
             // do not override input parameters
-            if (dropFrame == null) {
+            if (!(dropFrame instanceof Boolean)) {
                 final String delimiter = stringTimeCode.substring(8, 9);
-                this.dropFrame = delimiter.equals(':') ? false : true;
+                this.dropFrame = delimiter.equals(":") ? false : true;
             }
             this.frames = Integer.parseInt(parts[3]);
             timeCodeToFrameCount();
@@ -188,8 +188,7 @@ public class SmpteTimecode {
      * @returns {Timecode} timecode
      */
     public void add(Float timecode, boolean negative, int rollOverMaxHours) throws Error {
-        Float floatTimeCode = (Float) timecode;
-        long newFrameCount = this.frameCount + Math.round(floatTimeCode) * (negative ? -1 : 1);
+        long newFrameCount = this.frameCount + Math.round(timecode.floatValue()) * (negative ? -1 : 1);
         if (newFrameCount < 0 && rollOverMaxHours > 0) {
             newFrameCount = (Math.round(this.frameRate * 86400)) + newFrameCount;
             if (((newFrameCount / this.frameRate) / 3600) > rollOverMaxHours) {
@@ -225,4 +224,13 @@ public class SmpteTimecode {
         int timecode_tz = TIMEZONE_OFFSET * 60 * 1000;
         return new Date(midnight.getTime().getTime() + ms + (timecode_tz - midnight_tz));
     }
+
+    /**
+     * frameCount와 frameRate를 기반으로 밀리세컨드 시간을 구한다.
+     * @return Milliseconds
+     */
+    public long getMillis() {
+        return Double.valueOf(this.frameCount / this.frameRate * 1000).longValue();
+    }
+
 }
