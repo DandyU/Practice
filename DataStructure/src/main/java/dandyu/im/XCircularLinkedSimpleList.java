@@ -1,6 +1,6 @@
 package dandyu.im;
 
-public class XCircularLinkedList<E> implements XSimpleList<E> {
+public class XCircularLinkedSimpleList<E> implements XSimpleList<E> {
 
     private Node tail;
     private int size;

@@ -3,13 +3,11 @@ package dandyu.im;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-public class XCircularLinkedListTest {
+public class XCircularLinkedSimpleListTest {
 
     @Test
     public void add() {
-        XCircularLinkedList<Integer> arrayList = new XCircularLinkedList();
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -20,7 +18,7 @@ public class XCircularLinkedListTest {
 
     @Test
     public void remove() {
-        XCircularLinkedList<Integer> arrayList = new XCircularLinkedList();
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -37,7 +35,7 @@ public class XCircularLinkedListTest {
 
     @Test
     public void clearList() {
-        XCircularLinkedList<Integer> arrayList = new XCircularLinkedList();
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -50,7 +48,7 @@ public class XCircularLinkedListTest {
 
     @Test
     public void size() {
-        XCircularLinkedList<Integer> arrayList = new XCircularLinkedList();
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -62,7 +60,7 @@ public class XCircularLinkedListTest {
 
     @Test
     public void get() {
-        XCircularLinkedList<Integer> arrayList = new XCircularLinkedList();
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
