@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69a44682-f868-4947-a58c-f27736987160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedSimpleList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedSimpleList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XCircularLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XDoublyLinkedSimpleListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XSimpleLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dandyu/im/MyArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/dandyu/im/MyArrayListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/dandyu.im.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/dandyu.im.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XArraySimpleList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XCircularLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XCircularLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state>
+              <caret column="93" selection-start-column="93" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7243#7244#0" expanded="true" />
@@ -82,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="266" selection-start-line="266" selection-end-line="266" />
+            <state relative-caret-position="716">
+              <caret line="268" lean-forward="true" selection-start-line="268" selection-end-line="268" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -224,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/test/java/dandyu/im/MyArrayListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dandyu/im/MyArrayList.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java" />
         <option value="$PROJECT_DIR$/src/main/java/dandyu/im/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -240,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/test/java/dandyu/im/XSimpleLinkedListTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/dandyu/im/XCircularLinkedListTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java" />
       </list>
     </option>
   </component>
@@ -355,7 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.SmpteTimecodeTest.testExeception19">
+  <component name="RunManager" selected="Gradle.Tests in 'dandyu.im'">
     <configuration name="SmpteTimecodeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -458,10 +430,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'dandyu.im'" />
         <item itemvalue="Gradle.SmpteTimecodeTest.testExeception19" />
         <item itemvalue="Gradle.SmpteTimecodeTest" />
         <item itemvalue="Gradle.dandyu.im.XArrayListTest and 3 more" />
-        <item itemvalue="Gradle.Tests in 'dandyu.im'" />
         <item itemvalue="Gradle.XSimpleLinkedListTest" />
       </list>
     </recent_temporary>
@@ -485,17 +457,11 @@
       <workItem from="1562845137692" duration="534000" />
       <workItem from="1562845709739" duration="10163000" />
       <workItem from="1563066184446" duration="15155000" />
-      <workItem from="1563095134217" duration="15138000" />
+      <workItem from="1563095134217" duration="15942000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_in_'dandyu_im' - 2019.07.14 at 23h 42m 43s.xml">
-      <configuration name="Tests in 'dandyu.im'" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="dandyu_im_XArrayListTest_and_3_more - 2019.07.14 at 23h 43m 01s.xml">
-      <configuration name="dandyu.im.XArrayListTest and 3 more" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="SmpteTimecodeTest - 2019.07.14 at 23h 43m 27s.xml">
       <configuration name="SmpteTimecodeTest" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -520,9 +486,24 @@
     <history-entry file="SmpteTimecodeTest_testExeception19 - 2019.07.14 at 23h 55m 52s.xml">
       <configuration name="SmpteTimecodeTest.testExeception19" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="Tests_in_'dandyu_im' - 2019.07.14 at 23h 57m 52s.xml">
+      <configuration name="Tests in 'dandyu.im'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'dandyu_im' - 2019.07.14 at 23h 58m 00s.xml">
+      <configuration name="Tests in 'dandyu.im'" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66142000" />
+    <option name="totallyTimeSpent" value="66946000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="214" width="1300" height="1192" extended-state="0" />
@@ -536,13 +517,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32766762" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27950898" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27950898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295562" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.15014164" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.15014164" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.22851747" />
@@ -570,19 +551,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java</url>
-          <line>21</line>
+          <line>22</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java</url>
-          <line>99</line>
+          <line>100</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java</url>
-          <line>107</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -875,10 +856,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="268" lean-forward="true" selection-start-line="268" selection-end-line="268" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state>
+          <caret column="93" selection-start-column="93" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7243#7244#0" expanded="true" />
@@ -887,16 +878,6 @@
             <element signature="e#8534#8535#0" expanded="true" />
             <element signature="e#9401#9402#0" expanded="true" />
             <element signature="e#9491#9492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="266" selection-start-line="266" selection-end-line="266" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

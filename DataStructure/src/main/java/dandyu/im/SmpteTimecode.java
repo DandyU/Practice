@@ -1,3 +1,4 @@
+// 아래 코드는 GitHub의 https://github.com/CrystalComputerCorp/smpte-timecode의 JS 코드를 Java로 일부 변환했음
 package dandyu.im;
 
 import lombok.Getter;
