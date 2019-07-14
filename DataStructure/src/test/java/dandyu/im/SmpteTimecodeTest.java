@@ -265,9 +265,4 @@ public class SmpteTimecodeTest {
         timecode.subtract(new Float(301)); // below zero
     }
 
-    @Test(expected = Error.class)
-    public void testExeception19() {
-        SmpteTimecode timecode = new SmpteTimecode("23:00:01;00", null, null);
-    }
-
 }

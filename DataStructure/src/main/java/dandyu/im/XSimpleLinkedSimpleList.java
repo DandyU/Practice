@@ -1,22 +1,21 @@
 package dandyu.im;
 
-public class XCircularLinkedList<E> implements XSimpleList<E> {
+public class XSimpleLinkedSimpleList<E> implements XSimpleList<E> {
 
-    private Node tail;
+    private Node head;
     private int size;
 
     @Override
     public boolean add(E element) {
-        if (tail == null) {
-            tail = new Node(element, null);
-            tail.next = tail;
+        if (head == null) {
+            head = new Node(element, null);
         } else {
-            Node lastNdde = tail;
-            Node firstNode = tail.next;
-
-            tail = new Node(element, null);
-            lastNdde.next = tail;
-            tail.next = firstNode;
+            Node current = head;
+            final int listSize = size();
+            for (int i = 0; i < (listSize - 1); i++) {
+                current = current.next;
+            }
+            current.next = new Node(element, null);
         }
         size++;
 
@@ -30,14 +29,14 @@ public class XCircularLinkedList<E> implements XSimpleList<E> {
             throw new IndexOutOfBoundsException();
 
         if (listSize == 1) {
-            tail = null;
-            size = 0;
+            head = null;
+            size--;
 
             return true;
         }
 
         Node previous = null;
-        Node current = tail.next;
+        Node current = head;
         for (int i = 0; i < index; i++) {
             previous = current;
             current = current.next;
@@ -50,7 +49,7 @@ public class XCircularLinkedList<E> implements XSimpleList<E> {
 
     @Override
     public void clearList() {
-        tail = null;
+        head = null;
         size = 0;
     }
 
@@ -65,7 +64,7 @@ public class XCircularLinkedList<E> implements XSimpleList<E> {
         if (index < 0 || index >= listSize)
             throw new IndexOutOfBoundsException();
 
-        Node current = tail.next;
+        Node current = head;
         for (int i = 0; i < index; i++) {
             current = current.next;
         }
@@ -82,5 +81,4 @@ public class XCircularLinkedList<E> implements XSimpleList<E> {
             this.next = next;
         }
     }
-
 }

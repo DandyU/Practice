@@ -2,15 +2,14 @@ package dandyu.im;
 
 import java.lang.reflect.Array;
 
-public class XArrayList<T> {
+public class XArraySimpleList<E> implements XSimpleList<E> {
 
-    final private T[] array;
+    final private E[] array;
     final private int arraySize;
     private int cursor;
 
-
-    public XArrayList(Class<T> type, int size) {
-        array = (T[]) Array.newInstance(type.getComponentType(), size);
+    public XArraySimpleList(Class<E> type, int size) {
+        array = (E[]) Array.newInstance(type.getComponentType(), size);
         arraySize = size;
         cursor = 0;
     }
@@ -22,7 +21,8 @@ public class XArrayList<T> {
         return false;
     }
 
-    public boolean add(T element) {
+    @Override
+    public boolean add(E element) {
         if (size() >= arraySize)
             throw new IndexOutOfBoundsException();
 
@@ -31,6 +31,7 @@ public class XArrayList<T> {
         return true;
     }
 
+    @Override
     public boolean remove(int index) {
         if (index < 0 || index >= size())
             throw new IndexOutOfBoundsException();
@@ -40,15 +41,18 @@ public class XArrayList<T> {
         return true;
     }
 
+    @Override
     public void clearList() {
         cursor = 0;
     }
 
+    @Override
     public int size() {
         return cursor;
     }
 
-    public T get(int index) {
+    @Override
+    public E get(int index) {
         if (index < 0 || index >= size())
             throw new IndexOutOfBoundsException();
 

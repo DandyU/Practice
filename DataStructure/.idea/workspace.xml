@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69a44682-f868-4947-a58c-f27736987160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedSimpleList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedSimpleList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XCircularLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XDoublyLinkedSimpleListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XSimpleLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -14,15 +19,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/dandyu.im.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dandyu/im/MyArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/dandyu/im/MyArrayListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/dandyu.im.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/dandyu.im.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XArraySimpleList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XCircularLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dandyu/im/XCircularLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -56,44 +65,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/Date.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21700">
-              <caret line="1163" column="35" selection-start-line="1163" selection-start-column="27" selection-end-line="1163" selection-end-column="35" />
-              <folding>
-                <element signature="e#7387#7388#0" expanded="true" />
-                <element signature="e#7435#7436#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/MyArrayListTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
-              <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="41" />
+            <state relative-caret-position="237">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#7243#7244#0" expanded="true" />
+                <element signature="e#7281#7282#0" expanded="true" />
+                <element signature="e#8496#8497#0" expanded="true" />
+                <element signature="e#8534#8535#0" expanded="true" />
+                <element signature="e#9401#9402#0" expanded="true" />
+                <element signature="e#9491#9492#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="539">
+              <caret line="266" selection-start-line="266" selection-end-line="266" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,65 +95,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/lang/reflect/Array.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/MyArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="185">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
-                <element signature="e#5351#5352#0" expanded="true" />
-                <element signature="e#5408#5409#0" expanded="true" />
-                <element signature="e#5710#5711#0" expanded="true" />
-                <element signature="e#5737#5738#0" expanded="true" />
-                <element signature="e#6096#6097#0" expanded="true" />
-                <element signature="e#6145#6146#0" expanded="true" />
-                <element signature="e#6200#6201#0" expanded="true" />
-                <element signature="e#6257#6258#0" expanded="true" />
+                <element signature="e#1464#1658#0" expanded="true" />
+                <element signature="e#1657#1658#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedList.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="300">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XCircularLinkedList.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/ExpectException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            <state relative-caret-position="297">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedList.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="237">
+              <caret line="369" selection-start-line="369" selection-end-line="369" />
+              <folding>
+                <element signature="e#2922#2923#0" expanded="true" />
+                <element signature="e#2966#2967#0" expanded="true" />
+                <element signature="e#10310#10449#0" expanded="true" />
+                <element signature="e#10448#10449#0" expanded="true" />
+                <element signature="e#11040#11204#0" expanded="true" />
+                <element signature="e#11203#11204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/XSimpleLinkedListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -181,7 +185,6 @@
       <find>size(</find>
       <find>is(</find>
       <find>contains</find>
-      <find>add(</find>
       <find>timeCodeToFrameCount</find>
       <find>Exception</find>
       <find>_frameCountToTimeCode</find>
@@ -192,10 +195,24 @@
       <find>add</find>
       <find>Integer.class</find>
       <find>.intValue()</find>
+      <find>isFull</find>
+      <find>XArrayList&lt;Integer&gt; arrayList = new XArrayList(Integer[].class, 5);</find>
+      <find>before</find>
+      <find>get</find>
+      <find>get(</find>
+      <find>head</find>
+      <find>add(</find>
+      <find>XSimpleLinkedSimpleList</find>
+      <find>java.lang.Error</find>
+      <find>test</find>
     </findStrings>
     <replaceStrings>
       <replace>Error</replace>
       <replace>Integer[].class</replace>
+      <replace>XSimpleLinkedList&lt;Integer&gt; arrayList = new XSimpleLinkedList();</replace>
+      <replace>tail</replace>
+      <replace>XDoublyLinkedSimpleList</replace>
+      <replace>XCircularLinkedList</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -207,20 +224,30 @@
         <option value="$PROJECT_DIR$/src/test/java/dandyu/im/MyArrayListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dandyu/im/MyArrayList.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java" />
         <option value="$PROJECT_DIR$/src/main/java/dandyu/im/MyLinkedList.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java" />
         <option value="$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dandyu/im/XDoublyLinkedSimpleListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedSimpleList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedSimpleList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XArraySimpleList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dandyu/im/XCircularLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dandyu/im/XSimpleLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dandyu/im/XCircularLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="322" />
+    <option name="x" value="-12" />
+    <option name="y" value="321" />
     <option name="width" value="1950" />
-    <option name="height" value="1787" />
+    <option name="height" value="1788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,8 +255,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,6 +318,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,7 +330,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -328,13 +355,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.XArrayListTest">
-    <configuration name="XArrayListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SmpteTimecodeTest.testExeception19">
+    <configuration name="SmpteTimecodeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dandyu.im.XArrayListTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;dandyu.im.SmpteTimecodeTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -349,12 +376,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="XArrayListTest.add" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SmpteTimecodeTest.testExeception19" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dandyu.im.XArrayListTest.add&quot;" />
+        <option name="scriptParameters" value="--tests &quot;dandyu.im.SmpteTimecodeTest.testExeception19&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -369,12 +396,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="XArrayListTest.isFull" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'dandyu.im'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dandyu.im.XArrayListTest.isFull&quot;" />
+        <option name="scriptParameters" value="--tests &quot;dandyu.im.*&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -389,12 +416,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="XArrayListTest.remove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="XSimpleLinkedListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dandyu.im.XArrayListTest.remove&quot;" />
+        <option name="scriptParameters" value="--tests &quot;dandyu.im.XSimpleLinkedListTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -409,12 +436,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="XArrayListTest.size" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="dandyu.im.XArrayListTest and 3 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dandyu.im.XArrayListTest.size&quot;" />
+        <option name="scriptParameters" value="--tests &quot;dandyu.im.XArrayListTest&quot; --tests &quot;dandyu.im.XCircularLinkedListTest&quot; --tests &quot;dandyu.im.XDoublyLinkedSimpleListTest&quot; --tests &quot;dandyu.im.XSimpleLinkedListTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -431,11 +458,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.XArrayListTest" />
-        <item itemvalue="Gradle.XArrayListTest.add" />
-        <item itemvalue="Gradle.XArrayListTest.isFull" />
-        <item itemvalue="Gradle.XArrayListTest.remove" />
-        <item itemvalue="Gradle.XArrayListTest.size" />
+        <item itemvalue="Gradle.SmpteTimecodeTest.testExeception19" />
+        <item itemvalue="Gradle.SmpteTimecodeTest" />
+        <item itemvalue="Gradle.dandyu.im.XArrayListTest and 3 more" />
+        <item itemvalue="Gradle.Tests in 'dandyu.im'" />
+        <item itemvalue="Gradle.XSimpleLinkedListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -457,67 +484,68 @@
       <workItem from="1562766781830" duration="4918000" />
       <workItem from="1562845137692" duration="534000" />
       <workItem from="1562845709739" duration="10163000" />
-      <workItem from="1563066184446" duration="10622000" />
+      <workItem from="1563066184446" duration="15155000" />
+      <workItem from="1563095134217" duration="15138000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="XArrayListTest_add - 2019.07.14 at 12h 48m 14s.xml">
-      <configuration name="XArrayListTest.add" configurationId="GradleRunConfiguration" />
+    <history-entry file="Tests_in_'dandyu_im' - 2019.07.14 at 23h 42m 43s.xml">
+      <configuration name="Tests in 'dandyu.im'" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 48m 21s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="dandyu_im_XArrayListTest_and_3_more - 2019.07.14 at 23h 43m 01s.xml">
+      <configuration name="dandyu.im.XArrayListTest and 3 more" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 52m 31s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="SmpteTimecodeTest - 2019.07.14 at 23h 43m 27s.xml">
+      <configuration name="SmpteTimecodeTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 52m 58s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="SmpteTimecodeTest - 2019.07.14 at 23h 43m 50s.xml">
+      <configuration name="SmpteTimecodeTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 55m 42s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="SmpteTimecodeTest - 2019.07.14 at 23h 44m 03s.xml">
+      <configuration name="SmpteTimecodeTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 56m 10s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="SmpteTimecodeTest - 2019.07.14 at 23h 47m 38s.xml">
+      <configuration name="SmpteTimecodeTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 56m 47s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="SmpteTimecodeTest_testExeception19 - 2019.07.14 at 23h 50m 25s.xml">
+      <configuration name="SmpteTimecodeTest.testExeception19" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 57m 08s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="SmpteTimecodeTest_testExeception19 - 2019.07.14 at 23h 54m 11s.xml">
+      <configuration name="SmpteTimecodeTest.testExeception19" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 57m 58s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="SmpteTimecodeTest_testExeception19 - 2019.07.14 at 23h 54m 41s.xml">
+      <configuration name="SmpteTimecodeTest.testExeception19" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="XArrayListTest - 2019.07.14 at 12h 58m 22s.xml">
-      <configuration name="XArrayListTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="SmpteTimecodeTest_testExeception19 - 2019.07.14 at 23h 55m 52s.xml">
+      <configuration name="SmpteTimecodeTest.testExeception19" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46471000" />
+    <option name="totallyTimeSpent" value="66142000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="215" width="1300" height="1191" extended-state="0" />
+    <frame x="-8" y="214" width="1300" height="1192" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22338709" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22741936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32797733" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27977315" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32766762" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27950898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.15028356" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.15014164" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Build" order="12" weight="0.29489604" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.22851747" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -535,28 +563,33 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/XArraySimpleList.java</url>
           <line>12</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java</url>
+          <line>21</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="563" column="6" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="922">
@@ -604,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -624,34 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/ExpectException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="287" selection-start-line="287" selection-end-line="287" />
-          <folding>
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2966#2967#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -659,62 +657,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="412" column="28" lean-forward="true" selection-start-line="412" selection-start-column="28" selection-end-line="412" selection-end-column="28" />
-          <folding>
-            <element signature="e#7280#7281#0" expanded="true" />
-            <element signature="e#7348#7349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/MyLinkedList.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7243#7244#0" expanded="true" />
-            <element signature="e#7281#7282#0" expanded="true" />
-            <element signature="e#8496#8497#0" expanded="true" />
-            <element signature="e#8534#8535#0" expanded="true" />
-            <element signature="e#9401#9402#0" expanded="true" />
-            <element signature="e#9491#9492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5540">
-          <caret line="302" column="19" selection-start-line="302" selection-start-column="16" selection-end-line="302" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21700">
@@ -723,27 +666,6 @@
             <element signature="e#7387#7388#0" expanded="true" />
             <element signature="e#7435#7436#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XCircularLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -758,51 +680,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/MyArrayListTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/MyArrayListTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/MyArrayList.java" />
+    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/lang/reflect/Array.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="41" />
+        <state relative-caret-position="1020">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2627">
+          <caret line="237" column="17" selection-start-line="237" selection-start-column="16" selection-end-line="237" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+          <folding>
+            <element signature="e#7280#7281#0" expanded="true" />
+            <element signature="e#7348#7349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/XDoublyLinkedSimpleListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XSimpleLinkedSimpleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+          <folding>
+            <element signature="e#1276#1277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="332" column="6" lean-forward="true" selection-start-line="332" selection-start-column="6" selection-end-line="332" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XCircularLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XDoublyLinkedSimpleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#1703#1704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/XCircularLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/lang/reflect/Array.java">
+    <entry file="jar://$PROJECT_DIR$/../../../Libs/Java/zulu8.33.0.1-jdk8.0.192-win_x64/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="80">
+          <caret line="41" column="43" lean-forward="true" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/MyArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XArraySimpleList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="300">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
-            <element signature="e#5351#5352#0" expanded="true" />
-            <element signature="e#5408#5409#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
-            <element signature="e#5737#5738#0" expanded="true" />
-            <element signature="e#6096#6097#0" expanded="true" />
-            <element signature="e#6145#6146#0" expanded="true" />
-            <element signature="e#6200#6201#0" expanded="true" />
-            <element signature="e#6257#6258#0" expanded="true" />
+            <element signature="e#1464#1658#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/XArrayList.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="300">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/XArrayListTest.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/ExpectException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="297">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="369" selection-start-line="369" selection-end-line="369" />
+          <folding>
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2966#2967#0" expanded="true" />
+            <element signature="e#10310#10449#0" expanded="true" />
+            <element signature="e#10448#10449#0" expanded="true" />
+            <element signature="e#11040#11204#0" expanded="true" />
+            <element signature="e#11203#11204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/XSimpleLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dandyu/im/SmpteTimecode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7243#7244#0" expanded="true" />
+            <element signature="e#7281#7282#0" expanded="true" />
+            <element signature="e#8496#8497#0" expanded="true" />
+            <element signature="e#8534#8535#0" expanded="true" />
+            <element signature="e#9401#9402#0" expanded="true" />
+            <element signature="e#9491#9492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dandyu/im/SmpteTimecodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="266" selection-start-line="266" selection-end-line="266" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -861,11 +953,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>test|DataStructure</last-edited>
+          <last-edited>main|DataStructure</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
