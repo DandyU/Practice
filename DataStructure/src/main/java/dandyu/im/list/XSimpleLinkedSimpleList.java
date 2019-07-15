@@ -1,4 +1,4 @@
-package dandyu.im;
+package dandyu.im.list;
 
 public class XSimpleLinkedSimpleList<E> implements XSimpleList<E> {
 

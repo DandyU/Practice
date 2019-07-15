@@ -1,25 +1,14 @@
-package dandyu.im;
+package dandyu.im.list;
 
+import dandyu.im.list.XCircularLinkedSimpleList;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class XArrayListTest {
-
-    @Test
-    public void isFull() {
-        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
-        for (int i = 0; i < 5; i++) {
-            arrayList.add(new Integer(i));
-            System.out.print(arrayList.get(i) + " ");
-        }
-        System.out.println();
-
-        Assert.assertTrue(arrayList.isFull());
-    }
+public class XCircularLinkedSimpleListTest {
 
     @Test
     public void add() {
-        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -30,7 +19,7 @@ public class XArrayListTest {
 
     @Test
     public void remove() {
-        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -47,7 +36,7 @@ public class XArrayListTest {
 
     @Test
     public void clearList() {
-        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -60,7 +49,7 @@ public class XArrayListTest {
 
     @Test
     public void size() {
-        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -72,7 +61,7 @@ public class XArrayListTest {
 
     @Test
     public void get() {
-        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
+        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -81,5 +70,5 @@ public class XArrayListTest {
 
         Assert.assertEquals(2, arrayList.get(2).intValue());
     }
-
+    
 }

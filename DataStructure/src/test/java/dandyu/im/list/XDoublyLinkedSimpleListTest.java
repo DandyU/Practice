@@ -1,13 +1,14 @@
-package dandyu.im;
+package dandyu.im.list;
 
+import dandyu.im.list.XDoublyLinkedSimpleList;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class XCircularLinkedSimpleListTest {
+public class XDoublyLinkedSimpleListTest {
 
     @Test
     public void add() {
-        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
+        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -18,7 +19,7 @@ public class XCircularLinkedSimpleListTest {
 
     @Test
     public void remove() {
-        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
+        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -35,7 +36,7 @@ public class XCircularLinkedSimpleListTest {
 
     @Test
     public void clearList() {
-        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
+        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -48,7 +49,7 @@ public class XCircularLinkedSimpleListTest {
 
     @Test
     public void size() {
-        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
+        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -60,7 +61,7 @@ public class XCircularLinkedSimpleListTest {
 
     @Test
     public void get() {
-        XCircularLinkedSimpleList<Integer> arrayList = new XCircularLinkedSimpleList();
+        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");

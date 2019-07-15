@@ -1,4 +1,4 @@
-package dandyu.im;
+package dandyu.im.list;
 
 public class XDoublyLinkedSimpleList<E> implements XSimpleList<E> {
 

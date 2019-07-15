@@ -1,15 +1,26 @@
-package dandyu.im;
+package dandyu.im.list;
 
+import dandyu.im.list.XArraySimpleList;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+public class XArrayListTest {
 
-public class XDoublyLinkedSimpleListTest {
+    @Test
+    public void isFull() {
+        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
+        for (int i = 0; i < 5; i++) {
+            arrayList.add(new Integer(i));
+            System.out.print(arrayList.get(i) + " ");
+        }
+        System.out.println();
+
+        Assert.assertTrue(arrayList.isFull());
+    }
 
     @Test
     public void add() {
-        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
+        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -20,7 +31,7 @@ public class XDoublyLinkedSimpleListTest {
 
     @Test
     public void remove() {
-        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
+        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -37,7 +48,7 @@ public class XDoublyLinkedSimpleListTest {
 
     @Test
     public void clearList() {
-        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
+        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -50,7 +61,7 @@ public class XDoublyLinkedSimpleListTest {
 
     @Test
     public void size() {
-        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
+        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -62,7 +73,7 @@ public class XDoublyLinkedSimpleListTest {
 
     @Test
     public void get() {
-        XDoublyLinkedSimpleList<Integer> arrayList = new XDoublyLinkedSimpleList();
+        XArraySimpleList<Integer> arrayList = new XArraySimpleList(Integer[].class, 5);
         for (int i = 0; i < 5; i++) {
             arrayList.add(new Integer(i));
             System.out.print(arrayList.get(i) + " ");
@@ -71,5 +82,5 @@ public class XDoublyLinkedSimpleListTest {
 
         Assert.assertEquals(2, arrayList.get(2).intValue());
     }
-    
+
 }

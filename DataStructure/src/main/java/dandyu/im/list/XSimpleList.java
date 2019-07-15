@@ -1,4 +1,4 @@
-package dandyu.im;
+package dandyu.im.list;
 
 public interface XSimpleList<E> {
     boolean add(E element);

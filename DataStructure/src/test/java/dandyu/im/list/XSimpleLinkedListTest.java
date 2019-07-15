@@ -1,5 +1,6 @@
-package dandyu.im;
+package dandyu.im.list;
 
+import dandyu.im.list.XSimpleLinkedSimpleList;
 import org.junit.Assert;
 import org.junit.Test;
 

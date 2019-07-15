@@ -1,4 +1,4 @@
-package dandyu.im;
+package dandyu.im.list;
 
 import java.lang.reflect.Array;
 
