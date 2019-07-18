@@ -4,14 +4,18 @@ import java.util.LinkedList;
 
 public class HanoiTower {
 
-    public static void move(int n, String from, String temp, String to) {
+    private static void move(LinkedList<String> from, LinkedList<String> to) {
+        to.push(from.pop());
+        //System.out.println(from + " → " + to);
+    }
+
+    public static void hanoi(int n, LinkedList<String> from, LinkedList<String> to, LinkedList<String> temp) {
         if (n == 1) {
-            System.out.println("1 원판을 " + from + "에서 " + to + "로 옮겼습니다.");
-            return;
+            move(from, to);
         } else {
-            move(n - 1, from, to, temp);
-            System.out.println(n + " 원판을 " + from + "에서 " + to + "로 옮겼습니다.");
-            move(n - 1, temp, from, to);
+            hanoi(n - 1, from, temp, to);
+            move(from, to);
+            hanoi(n - 1, temp, to, from);
         }
     }
 }
