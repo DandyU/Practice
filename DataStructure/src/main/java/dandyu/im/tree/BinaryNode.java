@@ -1,9 +1,12 @@
 package dandyu.im.tree;
 
+import lombok.Builder;
+
+@Builder
 public class BinaryNode {
 
-    private int number;
-    private BinaryNode leftNode;
-    private BinaryNode rightNode;
+    public int number;
+    public BinaryNode leftNode;
+    public BinaryNode rightNode;
 
 }
